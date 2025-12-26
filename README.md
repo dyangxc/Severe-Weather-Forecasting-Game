@@ -1,7 +1,7 @@
 # Severe-Weather-Forecasting-Game
 SOFTWARE AUTHOR: @YangDawsonXC
 
-SOFTWARE VERSION: v1.00 
+SOFTWARE VERSION: v1.01 
 (LICENSE AGREEMENT & PATCH NOTES AT BOTTOM)
 
 CURRENT DATASET: 2003 - Early Dec. 2025
@@ -55,6 +55,9 @@ DATA SOURCES:
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 
 PATCH NOTES:
+Severe Weather Forecasting Game v1.01 [2025-12-26]
+- Removed leftover debugging code that got left in for release (thx Echo @vorticity4401 for the report)
+
 Severe Weather Forecasting Game v1.00 [2025-12-25]
 - PUBLIC RELEASE
 
@@ -107,6 +110,9 @@ Severe Weather Foreacasting Game v0.02 BETA [2025-12-20]
 
 Severe Weather Forecasting Game v0.01 BETA [2025-12-17]
 - Game release to closed testers (thanks everyone!)
+
+BETA TESTERS:
+Echo, Scr0s, Jlkillen, Blundenq, Honk, Adam, DontSpillTheTofu, Aya, and Willzuh
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 LICENSE AGREEMENT:
