@@ -1,13 +1,13 @@
 # Severe-Weather-Forecasting-Game
 SOFTWARE AUTHOR: @YangDawsonXC
 
-SOFTWARE VERSION: v1.01 
+SOFTWARE VERSION: v1.01.1
 (LICENSE AGREEMENT & PATCH NOTES AT BOTTOM)
 
 CURRENT DATASET: 2003 - Early Dec. 2025
 
 ABOUT:
-Created for the purpose of practicing severe weather foreacsting skills. This program mostly uses archived mesoanalysis data and severe weather event data from the Storm Prediction Center. If there is any data that appears to be broken or missing, it is likely to be a data source issue. This software is provided as is and will be updated when author is willing.
+Created for the purpose of practicing severe weather forecasting skills. This program mostly uses archived mesoanalysis data and severe weather event data from the Storm Prediction Center. If there is any data that appears to be broken or missing, it is likely to be a data source issue. This software is provided as is and will be updated when author is willing.
 
 This software is not associated with National Oceanic and Atmospheric Administration, National Weather Service, Storm Prediction Center, or Iowa Environmental Mesonet.
 
@@ -55,6 +55,10 @@ DATA SOURCES:
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 
 PATCH NOTES:
+Severe Weather Forecasting Game v1.01.1 [2025-12-26]
+- MAJOR CHANGE: Adjusted filtering to not include the next day's outlook. Incorrect values were caused by the next day's day 1 outlook issued between 06-12z to be included in data.
+- Adjusted wind and hail around. Should be displayed as categorical, tornado, wind, hail now.
+
 Severe Weather Forecasting Game v1.01 [2025-12-26]
 - Removed leftover debugging code that got left in for release (thx Echo @vorticity4401 for the report)
 
