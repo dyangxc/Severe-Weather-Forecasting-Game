@@ -1,4 +1,11 @@
 # Severe-Weather-Forecasting-Game
+How to download and play:
+This game is only available as a .exe file. You can find the latest versions under releases. 
+Only supported operating system at this time is Windows. 
+There are future plans to include Linux and Mac operating systems.
+
+Simply download the .exe file and run. You will be greeted with a welcome screen and with information on how to play.
+
 SOFTWARE AUTHOR: @YangDawsonXC
 
 SOFTWARE VERSION: v1.01.1
