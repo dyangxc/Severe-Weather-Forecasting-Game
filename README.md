@@ -63,6 +63,13 @@ DATA SOURCES:
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 
 PATCH NOTES:
+Severe Weather Forecasting Game v1.02 [2025-12-27]
+- MAJOR CHANGE: Left and Right panels should now always appear. Center content is now embedded within another container so if a monitor's resolution is lower, the user can use the vertical and horizontal scrollbars
+- MAJOR CHANGE: Added an ability to disable auto-download on startup and loading a new day. Setting can be found by going to the lower left and unchecking to disable. Resume/Pause Downloads button created to allow user to manually decide if they want to auto download the whole day
+- Added a Resume/Pause Downloads button to control downloads
+- Selecting a product that's not downloaded yet can now download the product's data
+- Quality of life changes to labels for better clarity of what they do
+
 Severe Weather Forecasting Game v1.01.1 [2025-12-26]
 - MAJOR CHANGE: Adjusted filtering to not include the next day's outlook. Incorrect values were caused by the next day's day 1 outlook issued between 06-12z to be included in data.
 - Adjusted wind and hail around. Should be displayed as categorical, tornado, wind, hail now.
