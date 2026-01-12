@@ -63,6 +63,17 @@ DATA SOURCES:
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 
 PATCH NOTES:
+Severe Weather Forecasting Game v1.03 [2026-01-11]
+- MAJOR CHANGE: Offline mode added!! Download your year timespan and play without an internet connection. Just make sure to have enough storage space.
+- MAJOR CHANGE: Added data layering and layering control options
+***NOT ALL DATA LAYERS ARE COMPATIBLE FOR LAYERING!!***
+- MAJOR CHANGE: Added data product about/help
+- MAJOR CHANGE: Added legend to the bottom of each product
+- MAJOR CHANGE: Extended data, now includes ALL of 2025, hooray!!
+- MAJOR CHANGE: Added ability to browse random days by going to settings and checking browse checkbox
+- MAJOR CHANGE: Removed scrollbar at the bottom and now allow the user to manually adjust the widths of each panel. Also included default resolution upon startup.
+- Selecting a product no longer resets the image and preserves last location viewed
+
 Severe Weather Forecasting Game v1.02 [2025-12-27]
 - MAJOR CHANGE: Left and Right panels should now always appear. Center content is now embedded within another container so if a monitor's resolution is lower, the user can use the vertical and horizontal scrollbars
 - MAJOR CHANGE: Added an ability to disable auto-download on startup and loading a new day. Setting can be found by going to the lower left and unchecking to disable. Resume/Pause Downloads button created to allow user to manually decide if they want to auto download the whole day
