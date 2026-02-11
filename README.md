@@ -9,7 +9,7 @@ To play, simply download the .exe file and run. You will be greeted with a welco
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 SOFTWARE AUTHOR: @YangDawsonXC
 
-SOFTWARE VERSION: v1.04
+SOFTWARE VERSION: v1.04.1
 (LICENSE AGREEMENT & PATCH NOTES AT BOTTOM)
 
 CURRENT DATASET: 2003 - 2025
@@ -63,6 +63,14 @@ DATA SOURCES:
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 
 PATCH NOTES:
+Severe Weather Forecasting Game v1.04.1 [2026-02-11]
+- Fixed GIS coordinate system (Used wrong projection system WGS84/NAD83 issues)... polygons should display properply when viewing
+- Fixed redo doing nothing
+- Added a cancel drawing button
+- Improved performance when viewing WPC Surface Analysis
+- Improved performance to reduce game hanging
+- Upped SIG/CIG by 1pt font scale (It was bothering me looking back at the legend...)
+
 Severe Weather Forecasting Game v1.04 [2026-02-10]
 - MAJOR CHANGE: Complete overhaul of the user's forecast map creation. Now uses a GIS coordinate and polygon/point system
 - MAJOR CHANGE: Added storm reports toggle in user's forecast map creation. Verification! :D
