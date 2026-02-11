@@ -9,10 +9,10 @@ To play, simply download the .exe file and run. You will be greeted with a welco
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 SOFTWARE AUTHOR: @YangDawsonXC
 
-SOFTWARE VERSION: v1.01.1
+SOFTWARE VERSION: v1.04
 (LICENSE AGREEMENT & PATCH NOTES AT BOTTOM)
 
-CURRENT DATASET: 2003 - Early Dec. 2025
+CURRENT DATASET: 2003 - 2025
 
 ABOUT:
 Created for the purpose of practicing severe weather forecasting skills. This program mostly uses archived mesoanalysis data and severe weather event data from the Storm Prediction Center. If there is any data that appears to be broken or missing, it is likely to be a data source issue. This software is provided as is and will be updated when author is willing.
@@ -63,6 +63,15 @@ DATA SOURCES:
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 
 PATCH NOTES:
+Severe Weather Forecasting Game v1.04 [2026-02-10]
+- MAJOR CHANGE: Complete overhaul of the user's forecast map creation. Now uses a GIS coordinate and polygon/point system
+- MAJOR CHANGE: Added storm reports toggle in user's forecast map creation. Verification! :D
+- MAJOR CHANGE: Use center mousebutton to scroll.
+- MAJOR CHANGE: Changed displaying user's created maps on viewing all maps
+- MAJOR CHANGE: Added User-R (User created map with SPC Reports) and User-NR (User created map with NO SPC Reports) to the time under view verification
+- MAJOR CHANGE: Adjusted offline download data format. Now can download individual dates and view what dates you downloaded. To delete the data navigate to the folder and delete the folder date
+- MAJOR CHANGE: Added similar SIG, CIG1, CIG2, CIG3 hatched patterns to user's forecast map creation.
+
 Severe Weather Forecasting Game v1.03 [2026-01-11]
 - MAJOR CHANGE: Offline mode added!! Download your year timespan and play without an internet connection. Just make sure to have enough storage space.
 - MAJOR CHANGE: Added data layering and layering control options
