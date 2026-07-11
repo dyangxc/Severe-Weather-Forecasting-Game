@@ -1,18 +1,18 @@
 # Severe-Weather-Forecasting-Game
 How to download and play:
 -------------------------------------------------------------------------------------------------------------------------------------------------------
-This game is only available as a .exe file. You can find the latest versions under releases. 
+This game is only available as a .exe file. There is no code available. You can find the latest versions under releases. 
 Only supported operating system at this time is Windows. 
-There are future plans to include Linux and Mac operating systems.
+Linux and MacOS 14.0+ operating systems are now available with limited support. Caution: may not work for all devices!
 -------------------------------------------------------------------------------------------------------------------------------------------------------
-To play, simply download the .exe file and run. You will be greeted with a welcome screen and with information on how to play.
+To play, simply download the .exe file and run for your operating system. You will be greeted with a welcome screen and with information on how to play.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 SOFTWARE AUTHOR: @YangDawsonXC
 
-SOFTWARE VERSION: v1.04.1
+SOFTWARE VERSION: v1.05
 (LICENSE AGREEMENT & PATCH NOTES AT BOTTOM)
 
-CURRENT DATASET: 2003 - 2025
+CURRENT DATASET: January 1, 2003 - June 30, 2026
 
 ABOUT:
 Created for the purpose of practicing severe weather forecasting skills. This program mostly uses archived mesoanalysis data and severe weather event data from the Storm Prediction Center. If there is any data that appears to be broken or missing, it is likely to be a data source issue. This software is provided as is and will be updated when author is willing.
@@ -42,7 +42,26 @@ VERIFICATION:
 After submitting your forecast, you can view:
 - All issued SPC Day 1 outlooks (0100Z, 1300Z, 1630Z, 2000Z, 0100Z)
 - Storm reports for the forecast day and yesterday's report also included!
-- Your drawn forecast maps compared to actual SPC outlooks
+- Your inputs are compared against what SPC issued that day (Valid 1300z thru 0100z).
+- Your drawn forecast maps are graded against the Modified Practically Perfect Hindcast model.
+
+ABOUT MODIFIED PRACTICALLY PERFECT HINDCAST GRADING:
+- When grading, your drawn map is compared to the PPH.
+- Developed in reference to Hitchens et al. 2013, WAF paper (Reference 1). The Modified PPH is dampened with a weight system to suppress inflated probabilities (Northern Illinois University and Gensini et al. 2020 BAMS) (Reference 2).
+- PPH is built from the day's storm reports and modeled on a 80km grid. 
+- Duplicate reports are filtered within a 25 mi (40 km) radius. Significant reports are weighted heavier.
+- The grading system searches and averages the PPH peaks rather than one single peak to determine your rank.
+- There is more grading leniency towards lower end days involving NONE and TSTM days.
+- In the event there are no reports or data to use, PPH is not created.
+- The following is the grading system:
+
+Grade   PPH Distance          Acceptable Probability Difference
+-----------------------------------------------------------------
+A+      < 25 mi (40 km)       Exact match
+A       < 50 mi (80 km)       Within 1 probability category
+B       < 100 mi (160 km)     Within 2 probability categories
+C       < 250 mi (402 km)     Within 2 probability categories
+F       Complete miss         Complete miss
 
 TIPS:
 - ***ALLOW ALL DATA PRODUCTS TO BE DOWNLOADED FOR BEST PERFORMANCE!!***
@@ -60,16 +79,31 @@ DATA SOURCES:
 - Weather Prediction Center Archives
 - Iowa Environmental Mesonet GIS Archives
 
+REFERENCES:
+1. Hitchens, N. M., Brooks, H. E., & Kay, M. P. (2013). Objective Limits on Forecasting Skill of Rare Events. Weather and Forecasting, 28(2), 525–534. https://doi.org/10.1175/WAF-D-12-00113.1
+2. Gensini, V. A., Haberlie, A. M., & Marsh, P. T. (2020). Practically Perfect Hindcasts of Severe Convective Storms. Bulletin of the American Meteorological Society, 101(8), E1291–E1305. https://doi.org/10.1175/BAMS-D-19-0321.1
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 
 PATCH NOTES:
+Severe Weather Forecasting Game v1.05 [2026-07-09]
+- MAJOR CHANGE: Added Mac and Linux support!
+- MAJOR CHANGE: Added Modified Practically Perfect Hindcast. Users can create forecasts and have their maps graded against PPH.
+NOTE: PPH only works when GIS data for reports is available.
+- MAJOR CHANGE: Updated playable data to run thru June 30, 2026.
+- MAJOR CHANGE: When Browsing Mode is enabled in settings, can now view any date!
+NOTE: data availability dependent...
+- MAJOR CHANGE: Updated to include 75% and 90% Wind probabilities.
+- MAJOR CHANGE: Added favorites layering.
+- Fixed bug where users were unable to pan on high resolution datasets.
+
 Severe Weather Forecasting Game v1.04.1 [2026-02-11]
 - Fixed GIS coordinate system (Used wrong projection system WGS84/NAD83 issues)... polygons should display properply when viewing
 - Fixed redo doing nothing
 - Added a cancel drawing button
 - Improved performance when viewing WPC Surface Analysis
 - Improved performance to reduce game hanging
-- Upped SIG/CIG by 1pt font scale (It was bothering me looking back at the legend...)
+- Upped SIG/CIG by 1pt font scale (It was bothering me looking back at the legend)
 
 Severe Weather Forecasting Game v1.04 [2026-02-10]
 - MAJOR CHANGE: Complete overhaul of the user's forecast map creation. Now uses a GIS coordinate and polygon/point system
